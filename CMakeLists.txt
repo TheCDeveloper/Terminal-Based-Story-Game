@@ -7,5 +7,5 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 project(StoryGame)
 
 
-file(GLOB SOURCES src/*.cpp)
+file(GLOB SOURCES CONFIGURE_DEPENDS src/*.cpp)
 add_executable(StoryGame ${SOURCES})

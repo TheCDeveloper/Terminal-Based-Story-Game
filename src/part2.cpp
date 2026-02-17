@@ -1,70 +1,125 @@
 #include "parts.h"
+#include "util.h"
+
 
 void part2a()
 {
-    std::string decision;
-    std::cout << "--------PART 2--------\n";
+    println("-------- PART 2 --------");
     sleep(2);
-    std::cout << "What will you do now?\n";
+    println("What will you do now?");
     sleep(2);
-    std::cout << "A. Ignore it and go home.\n";
+    println("A. Ignore it and go home.");
     sleep(1);
-    std::cout << "B. Walk towards the creature.\n";
+    println("B. Walk towards the creature.");
     sleep(1);
-    std::cout << "C. Call the police.\n";
+    println("C. Call the police.");
     sleep(1);
-    while (true)
-    {
-        std::cin >> decision;
-        if (decision == "A" || decision == "a")
-        {
-            std::cout << "You decide to just ignore the creature you saw and calm your mind by going home.\n";
-            sleep(4);
-            std::cout << "Once you reach your home, you get a snack and decide to chill.\n";
-            sleep(4);
-            std::cout << "You're watching something on your TV, when suddenly, you just get sudden panic attacks of sorts.\n";
-            sleep(5);
-            std::cout << "You see that creature as a distorted image of sorts and feel very dizzy.\n";
-            sleep(4);
-            std::cout << "You decide to just sleep to cool your mind.\n";
-            sleep(4);
-            break;                        
-        }
-        else if (decision == "B" || decision == "b")
-        {
-            std::cout << "You decide to walk towards the creature, to see what it wants.\n";
-            sleep(4);
-            std::cout << "As you get closer to the creature, the world seems to get more distorted.\n";
-            sleep(4);
-            std::cout << "You feel dizzy aswell, but decide to keep walking.\n";
-            sleep(4);
-            std::cout << "As you are about to make contact with the creature...\n";
-            sleep(4);
-            std::cout << "You feel a very heavy force and feel like you got blown away.\n";
-            sleep(4);
-            std::cout << "When you open your eyes, you see you're at your house, still wondering what happened.\n";
-            sleep(5);
-            break;
-        }
-        else if (decision == "C" || decision == "c")
-        {
 
-        }
-        else
-        {
-            std::cout << "Invalid option.\n";
-            std::cout << "Enter a valid option: ";
-            continue;
-        }
+    char decision = getResponse("> ", { 'a', 'b', 'c' });
+    switch (decision) {
+        case 'a':
+            println("You decide to just ignore the creature you saw and calm your mind by going home.");
+            sleep(4);
+            println("Once you reach your home, you get a snack and decide to chill.");
+            sleep(4);
+            println("You're watching something on your TV, when suddenly, you just get sudden panic attacks of sorts.");
+            sleep(5);
+            println("You see that creature as a distorted image of sorts and feel very dizzy.");
+            sleep(4);
+            println("You decide to just sleep to cool your mind.");
+            sleep(4);
+
+            break;
+
+        case 'b':
+            println("You decide to walk towards the creature, to see what it wants.");
+            sleep(4);
+            println("As you get closer to the creature, the world seems to get more distorted.");
+            sleep(4);
+            println("You feel dizzy aswell, but decide to keep walking.");
+            sleep(4);
+            println("As you are about to make contact with the creature...");
+            sleep(4);
+            println("You feel a very heavy force and feel like you got blown away.");
+            sleep(4);
+            println("When you open your eyes, you see you're at your house, still wondering what happened.");
+            sleep(5);
+
+            break;
+
+        case 'c':
+            break;
     }
 }
 
+
 void part2b()
 {
+    println("-------- PART 2 --------");
+    sleep(2);
+    println("What will you do now?");
+    sleep(2);
+    println("A. ...");
+    sleep(1);
+    println("B. ...");
+    sleep(1);
+    println("C. ...");
+    sleep(1);
 
+    char decision = getResponse("> ", { 'a', 'b', 'c' });
+    switch (decision) {
+        case 'a':
+            println("...");
+            sleep(1);
+
+            break;
+
+        case 'b':
+            println("...");
+            sleep(1);
+
+            break;
+
+        case 'c':
+            println("...");
+            sleep(1);
+
+            break;
+    }
 }
+
 
 void part2c()
 {
+    println("-------- PART 2 --------");
+    sleep(2);
+    println("What will you do now?");
+    sleep(2);
+    println("A. ...");
+    sleep(1);
+    println("B. ...");
+    sleep(1);
+    println("C. ...");
+    sleep(1);
 
+    char decision = getResponse("> ", { 'a', 'b', 'c' });
+    switch (decision) {
+        case 'a':
+            println("...");
+            sleep(1);
+
+            break;
+
+        case 'b':
+            println("...");
+            sleep(1);
+
+            break;
+
+        case 'c':
+            println("...");
+            sleep(1);
+
+            break;
+    }
 }

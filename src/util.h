@@ -1,23 +1,35 @@
 #pragma once
-#include <iostream>
-#include <string>
+#include <cstdio>
 #include <string_view>
 #include <set>
+#include <chrono>
+#include <thread>
 
 
-static inline std::string input(const std::string &msg,
-                                const std::set<std::string> &values) noexcept {
-    static std::string str;
+static inline void sleep(int sec) noexcept {
+    std::this_thread::sleep_for(std::chrono::seconds(sec));
+}
+
+
+static inline char getResponse(const std::string_view msg,
+                               const std::set<char> &values) noexcept {
+    char c;
+
     while (true) {
-        std::cout << msg;
-        std::cin >> str;
+        printf("%s", msg.data());
+        scanf("%c", &c);
 
-        if (values.find(msg) == values.end()) {
+        if (values.find(std::tolower(c)) == values.end()) {
             continue;
         }
 
         break;
     }
 
-    return str;
+    return c;
+}
+
+
+static inline void println(const std::string_view msg) noexcept {
+    printf("%s\n", msg.data());
 }
