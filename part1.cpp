@@ -1,8 +1,8 @@
 #include "parts.h"
+#include "util.h"
 
 void part1() 
 {
-    std::string decision;
     std::cout << "--------PART 1--------\n";
     sleep(2);
     std::cout << "It's a weekend and you decide to do something... fun. What will you do?\n";
@@ -15,7 +15,7 @@ void part1()
     sleep(1);
     while (true)
     {
-        std::cin >> decision;
+        auto decision = input("> ", {"A", "a", "B", "b", "C", "c"});
         if (decision == "A" || decision == "a")
         {
             std::cout << "You call up your friends, and after a while, you guys meet up at the mall.\n";
@@ -69,12 +69,6 @@ void part1()
             sleep(5);
             part2c();
             break;
-        }
-        else
-        {
-            std::cout << "Invalid option.\n";
-            std::cout << "Enter a valid option: ";
-            continue;
         }
     }
 }
