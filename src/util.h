@@ -1,5 +1,6 @@
 #pragma once
 #include <cstdio>
+#include <cctype>
 #include <string_view>
 #include <set>
 #include <chrono>
@@ -19,7 +20,8 @@ static inline char getResponse(const std::string_view msg,
         printf("%s", msg.data());
         scanf("%c", &c);
 
-        if (values.find(std::tolower(c)) == values.end()) {
+        char lowerC = static_cast<char>(std::tolower(static_cast<unsigned char>(c)));
+        if (values.find(lowerC) == values.end()) {
             continue;
         }
 
