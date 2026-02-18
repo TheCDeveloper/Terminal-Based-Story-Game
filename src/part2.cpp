@@ -4,48 +4,49 @@
 
 void part2a()
 {
-    println("-------- PART 2 --------");
-    sleep(2);
-    println("What will you do now?");
-    sleep(2);
-    println("A. Ignore it and go home.");
-    sleep(1);
-    println("B. Walk towards the creature.");
-    sleep(1);
-    println("C. Call the police.");
-    sleep(1);
+    showMessage("-------- PART 2 --------", 2);
+    showMessage("What will you do now?", 2);
+    showMessage("A. Ignore it and go home.", 1);
+    showMessage("B. Walk towards the creature.", 1);
+    showMessage("C. Call the police.", 1);
+
 
     char decision = getResponse("> ", { 'a', 'b', 'c' });
     switch (decision) {
         case 'a':
-            println("You decide to just ignore the creature you saw and calm your mind by going home.");
-            sleep(4);
-            println("Once you reach your home, you get a snack and decide to chill.");
-            sleep(4);
-            println("You're watching something on your TV, when suddenly, you just get sudden panic attacks of sorts.");
-            sleep(5);
-            println("You see that creature as a distorted image of sorts and feel very dizzy.");
-            sleep(4);
-            println("You decide to just sleep to cool your mind.");
-            sleep(4);
+            showMessage("You decide to just ignore the creature you saw and calm your mind by "
+                        "going home.", 4);
+
+            showMessage("Once you reach your home, you get a snack and decide to chill.", 4);
+
+            showMessage("You're watching something on your TV, when suddenly, you just get sudden "
+                        "panic attacks of sorts.", 5);
+
+            showMessage("You see that creature as a distorted image of sorts "
+                        "and feel very dizzy.", 4);
+
+            showMessage("You decide to just sleep to cool your mind.", 4);
 
             break;
+
 
         case 'b':
-            println("You decide to walk towards the creature, to see what it wants.");
-            sleep(4);
-            println("As you get closer to the creature, the world seems to get more distorted.");
-            sleep(4);
-            println("You feel dizzy aswell, but decide to keep walking.");
-            sleep(4);
-            println("As you are about to make contact with the creature...");
-            sleep(4);
-            println("You feel a very heavy force and feel like you got blown away.");
-            sleep(4);
-            println("When you open your eyes, you see you're at your house, still wondering what happened.");
-            sleep(5);
+            showMessage("You decide to walk towards the creature, to see what it wants.", 4);
+
+            showMessage("As you get closer to the creature, the world seems to "
+                        "get more distorted.", 4);
+
+            showMessage("You feel dizzy aswell, but decide to keep walking.", 4);
+
+            showMessage("As you are about to make contact with the creature...", 4);
+
+            showMessage("You feel a very heavy force and feel like you got blown away.", 4);
+
+            showMessage("When you open your eyes, you see you're at your house, still wondering "
+                        "what happened.", 5);
 
             break;
+
 
         case 'c':
             break;
@@ -55,35 +56,25 @@ void part2a()
 
 void part2b()
 {
-    println("-------- PART 2 --------");
-    sleep(2);
-    println("What will you do now?");
-    sleep(2);
-    println("A. ...");
-    sleep(1);
-    println("B. ...");
-    sleep(1);
-    println("C. ...");
-    sleep(1);
+    showMessage("-------- PART 2 --------", 2);
+    showMessage("What will you do now?", 2);
+    showMessage("A. ...", 1);
+    showMessage("B. ...", 1);
+    showMessage("C. ...", 1);
+
 
     char decision = getResponse("> ", { 'a', 'b', 'c' });
     switch (decision) {
         case 'a':
-            println("...");
-            sleep(1);
-
+            showMessage("...", 1);
             break;
 
         case 'b':
-            println("...");
-            sleep(1);
-
+            showMessage("...", 1);
             break;
 
         case 'c':
-            println("...");
-            sleep(1);
-
+            showMessage("...", 1);
             break;
     }
 }
@@ -91,35 +82,27 @@ void part2b()
 
 void part2c()
 {
-    println("-------- PART 2 --------");
-    sleep(2);
-    println("What will you do now?");
-    sleep(2);
-    println("A. ...");
-    sleep(1);
-    println("B. ...");
-    sleep(1);
-    println("C. ...");
-    sleep(1);
+    showMessage("-------- PART 2 --------", 2);
+    showMessage("What will you do now?", 2);
+    showMessage("A. ...", 1);
+    showMessage("B. ...", 1);
+    showMessage("C. ...", 1);
+
 
     char decision = getResponse("> ", { 'a', 'b', 'c' });
     switch (decision) {
         case 'a':
-            println("...");
-            sleep(1);
-
+            showMessage("...", 1);
             break;
+
 
         case 'b':
-            println("...");
-            sleep(1);
-
+            showMessage("...", 1);
             break;
 
-        case 'c':
-            println("...");
-            sleep(1);
 
+        case 'c':
+            showMessage("...", 1);
             break;
     }
 }

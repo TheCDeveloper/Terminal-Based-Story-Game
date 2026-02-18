@@ -33,3 +33,9 @@ static inline char getResponse(const std::string_view msg,
 static inline void println(const std::string_view msg) noexcept {
     printf("%s\n", msg.data());
 }
+
+
+static inline void showMessage(const std::string_view msg, int sec) noexcept {
+    println(msg);
+    sleep(sec);
+}
