@@ -174,12 +174,23 @@ void part2c()
                         "creature appears and disappears throughout the footage.", 8);
             
             showMessage("You get worried it might still be in your house.", 5);
-            
+
             break;
 
 
         case 'c':
-            showMessage("...", 1);
+            showMessage("You decide to continue playing while keeping an eye on your "
+                        "surroundings", 6);
+
+            showMessage("You play for about 15 minutes but don't notice anything.", 5);
+
+            showMessage("You and your friends play for another 30 minutes.", 5);
+
+            showMessage("As you're about to stop observing, you see it.", 5);
+
+            showMessage("The creature, standing behind one of your friends, staring at "
+                        "you.", 6);
+                
             break;
     }
 }
