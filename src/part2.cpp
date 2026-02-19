@@ -97,7 +97,22 @@ void part2b()
             break;
 
         case 'b':
-            showMessage("...", 1);
+            showMessage("You decide to call a trusty friend of yours to help in, "
+                        "investigating your house.", 6);
+            
+            showMessage("You wait for about 20 minutes.", 4);
+
+            showMessage("They arrive at your house and you tell them what happened.", 5);
+
+            showMessage("They do find it a bit weird but still decide to help you in, "
+                        "finding some evidence.", 6);
+
+            showMessage("You both search for about 7 minutes but can't find anything.", 5);
+
+            showMessage("Your friend then leaves as they have some important work to do.", 5);
+
+            showMessage("You decide to just take rest and go sleep.", 4);
+            
             break;
 
         case 'c':
