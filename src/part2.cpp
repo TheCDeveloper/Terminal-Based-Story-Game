@@ -112,11 +112,21 @@ void part2b()
             showMessage("Your friend then leaves as they have some important work to do.", 5);
 
             showMessage("You decide to just take rest and go sleep.", 4);
-            
+
             break;
 
         case 'c':
-            showMessage("...", 1);
+            showMessage("You decide to just continue watching the show.", 5);
+
+            showMessage("You start feeling a bit sleepy.", 4);
+
+            showMessage("You decide to drink some coffee to stay awake until you finish, "
+                        "watching the show.", 6);
+
+            showMessage("You binge-watch for about 2 more hours.", 5);
+
+            showMessage("After you're done, you decide to get some sleep and head to bed.", 5);
+            
             break;
     }
 }
