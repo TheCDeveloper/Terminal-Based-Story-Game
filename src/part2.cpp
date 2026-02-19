@@ -74,9 +74,9 @@ void part2b()
 {
     showMessage("-------- PART 2 --------", 2);
     showMessage("What will you do now?", 2);
-    showMessage("A. ...", 1);
-    showMessage("B. ...", 1);
-    showMessage("C. ...", 1);
+    showMessage("A. Investigate further alone to get more evidence.", 1);
+    showMessage("B. Call a friend to try and get more evidence.", 1);
+    showMessage("C. Continue watching the show.", 1);
 
 
     char decision = getResponse("> ", { 'a', 'b', 'c' });
