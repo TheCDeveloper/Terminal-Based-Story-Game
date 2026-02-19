@@ -7,11 +7,13 @@
 #include <thread>
 
 
+// Sleep for number of seconds
 static inline void sleep(int sec) noexcept {
     std::this_thread::sleep_for(std::chrono::seconds(sec));
 }
 
 
+// Get the response, with expected values
 static inline char getResponse(const std::string_view msg,
                                const std::set<char> &values) noexcept {
     char c;
@@ -32,11 +34,13 @@ static inline char getResponse(const std::string_view msg,
 }
 
 
+// Print a message
 static inline void println(const std::string_view msg) noexcept {
     printf("%s\n", msg.data());
 }
 
 
+// Show a message, with a specified delay in seconds
 static inline void showMessage(const std::string_view msg, int sec) noexcept {
     println(msg);
     sleep(sec);
