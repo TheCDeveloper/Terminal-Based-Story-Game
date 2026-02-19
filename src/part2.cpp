@@ -155,12 +155,26 @@ void part2c()
 
             showMessage("You decide to head out after playing in your house for "
                         "so long.", 6);
-                        
+
             break;
 
 
         case 'b':
-            showMessage("...", 1);
+            showMessage("You decide to continue playing and check the camera footage "
+                        "after you're done playing.", 6);
+
+            showMessage("You and your friends play for about 2 more hours.", 5);
+
+            showMessage("After you're done, you check the camera footage of the last "
+                        "2 hours.", 6);
+
+            showMessage("You turn it up to 5x speed and observe.", 5);
+
+            showMessage("You then see that, in an interval of every few minutes, the "
+                        "creature appears and disappears throughout the footage.", 8);
+            
+            showMessage("You get worried it might still be in your house.", 5);
+            
             break;
 
 
