@@ -126,7 +126,7 @@ void part2b()
             showMessage("You binge-watch for about 2 more hours.", 5);
 
             showMessage("After you're done, you decide to get some sleep and head to bed.", 5);
-            
+
             break;
     }
 }
@@ -137,9 +137,9 @@ void part2c()
 {
     showMessage("-------- PART 2 --------", 2);
     showMessage("What will you do now?", 2);
-    showMessage("A. ...", 1);
-    showMessage("B. ...", 1);
-    showMessage("C. ...", 1);
+    showMessage("A. Ignore it and continue playing.", 1);
+    showMessage("B. Check the camera footage after playing.", 1);
+    showMessage("C. Keep an eye out for the creature while playing.", 1);
 
 
     char decision = getResponse("> ", { 'a', 'b', 'c' });
