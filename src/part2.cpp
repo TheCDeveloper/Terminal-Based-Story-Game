@@ -49,6 +49,12 @@ void part2a()
 
 
         case 'c':
+            showMessage("You decide to call the police.", 3);
+            showMessage("You wait in the mall for about 8 minutes.", 4);
+            showMessage("Then, the police arrive and you walk up to them and explain what happened.", 5);
+            showMessage("They think you're out of your mind, but they still decide to investigate once.", 5);
+            showMessage("They investigate the area where you told them the monster was, but they couldn't find anything.", 6);
+            showMessage("They then leave and you decide to just head back home and rest.", 5);
             break;
     }
 }
