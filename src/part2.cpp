@@ -82,7 +82,18 @@ void part2b()
     char decision = getResponse("> ", { 'a', 'b', 'c' });
     switch (decision) {
         case 'a':
-            showMessage("...", 1);
+            showMessage("You decide to try and get more evidence on the creature being, "
+                        "real.", 5);
+
+            showMessage("You search your entire house for about 10 minutes.", 4);
+
+            showMessage("You record your entire search in hopes of capturing something.", 5);
+
+            showMessage("In the end, you aren't able to find any evidence and just, "
+                        "decide to give up.", 6);
+            
+            showMessage("You then decide to take some rest after the tiring search.", 5);
+            
             break;
 
         case 'b':
