@@ -49,6 +49,7 @@ void part2a()
 
 
         case 'c':
+            showMessage("...", 1);
             break;
     }
 }
