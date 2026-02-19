@@ -145,7 +145,17 @@ void part2c()
     char decision = getResponse("> ", { 'a', 'b', 'c' });
     switch (decision) {
         case 'a':
-            showMessage("...", 1);
+            showMessage("You decide to ignore the creature you saw and continue having "
+                        "fun.", 6);
+
+            showMessage("You and your friends play for about 30 more minutes.", 5);
+
+            showMessage("Then, after playing, you and your friends all say goodbye, "
+                        "and go back to their houses.", 6);
+
+            showMessage("You decide to head out after playing in your house for "
+                        "so long.", 6);
+                        
             break;
 
 
